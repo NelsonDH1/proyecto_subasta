@@ -1,0 +1,310 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+
+
+nav{
+    background-color: rgb(223, 224, 224);
+     width: 100%;
+    height: 214px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px ;
+   
+   
+    display: block;
+    grid-template: "logoprincipal  menuprincipal"
+                    "empty          divbusqueda"/
+                    1fr                2fr
+}
+
+.logoprincipal{
+    grid-area: logoprincipal;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 50px;
+
+}
+
+
+
+
+a{
+    text-decoration: none;
+    color: black;
+    text-align: right;
+    margin-right: 50px;
+    margin-bottom: 40px;
+    padding: 10px 30px;
+    
+
+}
+a:hover{
+    color: rgb(237, 239, 241);
+    
+}
+
+
+
+li{
+    background-color: rgb(143, 238, 20);
+    font-size: 1.8em;
+    display: inline-block;
+    color: black;
+    padding: 2opx 20px;
+    margin: 30px;
+    text-decoration: none;
+    font-family: tahoma;
+    text-transform: none
+
+
+}
+
+.cajadebusqueda{
+    font-size: 20px;
+}
+.divtexto{
+    background-color: orange;
+    width: 60%;
+    height: 66px;
+    margin-right: 50px;
+    margin-left: 400px;
+    text-align: right;
+    text-align: center;
+   border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    font-size: 0.9em;
+}
+
+.textdecabecera{
+    text-align: center;
+    padding: 10px 30px;
+
+}
+
+.divpricipal{
+    display: grid;
+    grid-template:"login submenu contenedorslider"/
+                    2fr    2fr        2fr;
+
+}
+.login{
+    grid-area: login;
+    margin: 50px 0  10px 0;
+    background-color: rgb(143, 238, 20);
+    width: 80%;
+    height: 340px;
+    text-align: center;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    
+
+
+}
+.submenu{
+    grid-area: submenu;
+    margin: 50px 10px 10px 10px;
+    background-color: white;
+    width: 80%;
+    height: 400px;
+    
+    
+
+
+}
+.contenedorslider{
+    grid-area: contenedorslider;
+    margin:  50px 10px 40px 10px;
+    width: 80%;
+    height: 400px;
+    
+
+}
+.ingrezar{
+    font-size: 3em;
+    background-color: rgb(223, 224, 224);
+    margin-top: 80px;
+    width: 75%;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px ;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    text-align: center;
+    
+    
+}
+.registrarse{
+    font-size: 3em;
+    background-color: rgb(223, 224, 224);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px ;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    text-align: center;
+    
+}
+
+.Tendencias{
+    margin-top: 12px;
+    margin-left: 4px;
+    float: left;
+    font-size: 3em;
+    background-color: orange;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px ;
+    text-align: center;
+   
+}
+.Ofertas{
+   margin-left: 4px;
+    margin-top: 50%;
+    font-size: 3em;
+    background-color: orange;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px ;
+    width: 75%;
+    text-align: center;
+  
+
+}
+
+.imgfrutas{
+    width: 100%;
+    margin-top: 30px;
+    margin-right: 70px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px ;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    
+}
+
+.contenedordepiedepagina{
+    display: grid;
+    grid-template:"piedepagina imgpie "/
+                      2fr         2fr        
+}
+
+.imgpie{
+    background-color: rgb(143, 238, 20);
+    width: 100%;
+
+}
+
+.logodepie{
+    width: 18%;
+    
+      margin-top: 15px;
+      margin-left: 84%;
+
+     
+
+}
+.piedepagina{
+    width: 96.6%;
+    background-color: rgb(143, 238, 20);
+    text-align: left;
+    height: 118px;
+    font-size: 1.4em;
+    padding: 10px 30px;
+    
+   }
+
+   h5{
+       margin-top: 6px;
+   }
+
+   .menuprincipal{
+      
+        
+    grid-area: menuprincipal;
+   margin-top: -150px;
+   background-color: rgb(223, 224, 224);
+   text-align: right;
+   margin-right: 100px;
+
+} 
+
+   .menubarra{
+         visibility: hidden;
+        position: fixed; 
+        width: 30px;
+        right: 80px;
+        top: 25px;
+        font-size: 60px;
+    
+
+    }
+
+   @media only screen and (max-width: 1000px) {
+       
+    .menubarra{
+            visibility: visible;
+            position: fixed;
+            width: 80px;
+            right: 30px;
+            top: 25px;
+            
+            
+           
+    } 
+    .cajadebusqueda{
+        
+    }
+
+    .menuprincipal{
+        background-color: aliceblue;
+        
+        
+    }
+
+ .menuprincipal>li {
+        background-color: rgb(199, 34, 34);
+        display: block;
+        display: none;
+        padding: 0px;
+        border-radius: 0;
+        margin-bottom: 1;
+        margin-top: 0;
+        border-bottom:1px solid rgb(48, 48, 48,.8);
+        text-align: center;
+        width: 30%;
+
+    } 
+
+    .menuprincepavisible2{
+        background-color: rgb(167, 165, 165);
+        display: block;
+        margin-left: 40%;
+        margin-bottom: 30%;
+        border-bottom:1px solid rgb(48, 48, 48,.8);
+        text-align: center;
+        width: 50%;
+    }
+
+    .login{
+        display: none;
+    }
+    .submenu{
+        display: none;
+    }
+    .cajadebusqueda{
+        display: none;
+    }
+
+    
+
+    .menuprincipal{
+        
+    }
+
+    
+
+    
+    }
+  
+  
+  
+  
+   
